@@ -17,21 +17,6 @@ class Day04(private val input: List<String>) {
                 .associate { (field, value) -> field to value }
         }
 
-    private fun <T> Iterable<T>.split(block: (T) -> Boolean): List<List<T>> {
-        val outer = mutableListOf<List<T>>()
-        var inner = mutableListOf<T>()
-        forEach { e ->
-            if (block(e)) {
-                outer.add(inner)
-                inner = mutableListOf()
-            } else {
-                inner.add(e)
-            }
-        }
-        outer.add(inner)
-        return outer
-    }
-
     private fun Map<String, String>.hasAllRequiredFields() =
         keys.containsAll(setOf("byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"))
 
