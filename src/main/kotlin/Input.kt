@@ -8,4 +8,5 @@ class Input(filename: String) {
     fun oneLine() = lines().first()
     fun lines() = file.readLines()
     fun intLines() = lines().map { it.toInt() }
+    fun longLines() = lines().map { it.toLong() }
 }
