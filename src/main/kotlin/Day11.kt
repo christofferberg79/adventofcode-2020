@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day11(private val input: List<String>) {
-    constructor() : this(Input("11.txt").lines())
-
     private val xRange = input.indices
     private val yRange = input.first().indices
 

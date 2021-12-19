@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day03(private val input: List<String>) {
-    constructor() : this(Input("03.txt").lines())
-
     fun part1() = treesOfSlope(3, 1)
 
     fun part2(): Int {

@@ -16,6 +16,8 @@ class Day07Test {
         "dotted black bags contain no other bags."
     )
 
+    private val realInput = Input("07").lines()
+
     @Test
     fun part1_Example() {
         val result = Day07(exampleInput).part1()
@@ -24,7 +26,7 @@ class Day07Test {
 
     @Test
     fun part1_RealInput() {
-        val result = Day07().part1()
+        val result = Day07(realInput).part1()
         assertEquals(355, result)
     }
 
@@ -36,7 +38,7 @@ class Day07Test {
 
     @Test
     fun part2_RealInput() {
-        val result = Day07().part2()
+        val result = Day07(realInput).part2()
         assertEquals(5312, result)
     }
 }

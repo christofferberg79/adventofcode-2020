@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day10(input: List<Int>) {
-    constructor() : this(Input("10.txt").intLines())
-
     private val max = input.maxOrNull()!!
     private val adapters = (input + 0 + (max + 3)).toSet()
     private val numArrangements = mutableMapOf(max to 1L)

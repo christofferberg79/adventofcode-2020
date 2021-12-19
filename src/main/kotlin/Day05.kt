@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day05(private val input: List<String>) {
-    constructor() : this(Input("05.txt").lines())
-
     fun part1() = input.maxOf { line -> getId(line) }
 
     private fun getId(line: String) = line.map { if (it in "FL") 0 else 1 }

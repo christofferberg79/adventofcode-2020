@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day14(private val input: List<String>) {
-    constructor() : this(Input("14.txt").lines())
-
     fun part1() = runProgram { memory, mask, addr, value ->
         val binary = value.toString(2).padStart(36, '0')
         val masked = binary.mapIndexed { i, c -> if (mask[i] == 'X') c else mask[i] }.joinToString("")

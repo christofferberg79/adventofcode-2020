@@ -3,8 +3,6 @@ package cberg.aoc2020
 import kotlin.math.abs
 
 class Day12(private val input: List<String>) {
-    constructor() : this(Input("12.txt").lines())
-
     fun part1(): Int {
         var pos = Vec(0, 0)
         var dir = east

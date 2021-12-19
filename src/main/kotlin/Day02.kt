@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day02(private val input: List<String>) {
-    constructor() : this(Input("02.txt").lines())
-
     fun part1() = input.map(::parse).count { d ->
         d.run { s.count { it == c } in i1..i2 }
     }

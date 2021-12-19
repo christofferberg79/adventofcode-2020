@@ -8,6 +8,8 @@ class DayXXTest {
         ""
     )
 
+    private val realInput = Input("XX").lines()
+
     @Test
     fun part1_Example() {
         val result = DayXX(exampleInput).part1()
@@ -16,7 +18,7 @@ class DayXXTest {
 
     @Test
     fun part1_RealInput() {
-        val result = DayXX().part1()
+        val result = DayXX(realInput).part1()
         assertEquals(0, result)
     }
 
@@ -28,7 +30,7 @@ class DayXXTest {
 
     @Test
     fun part2_RealInput() {
-        val result = DayXX().part2()
+        val result = DayXX(realInput).part2()
         assertEquals(0, result)
     }
 }

@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day01(private val input: List<Int>) {
-    constructor() : this(Input("01.txt").intLines())
-
     fun part1(): Int {
         for (i in 0..input.lastIndex - 1) {
             for (j in (i + 1)..input.lastIndex) {

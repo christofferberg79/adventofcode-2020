@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day09(private val input: List<Long>, private val n: Int) {
-    constructor(n: Int) : this(Input("09.txt").longLines(), n)
-
     fun part1(): Long {
         for (i in n..input.lastIndex) {
             if (!isValid(i)) {

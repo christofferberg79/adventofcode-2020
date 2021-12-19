@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day08(input: List<String>) {
-    constructor() : this(Input("08.txt").lines())
-
     private val instructions = input.map { line -> parse(line) }
 
     fun part1(): Int {

@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day04(private val input: List<String>) {
-    constructor() : this(Input("04.txt").lines())
-
     fun part1() = parseInput()
         .count { it.hasAllRequiredFields() }
 

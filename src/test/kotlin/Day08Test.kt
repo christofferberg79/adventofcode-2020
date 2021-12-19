@@ -16,6 +16,8 @@ class Day08Test {
         "acc +6"
     )
 
+    private val realInput = Input("08").lines()
+
     @Test
     fun part1_Example() {
         val result = Day08(exampleInput).part1()
@@ -24,7 +26,7 @@ class Day08Test {
 
     @Test
     fun part1_RealInput() {
-        val result = Day08().part1()
+        val result = Day08(realInput).part1()
         assertEquals(1594, result)
     }
 
@@ -36,7 +38,7 @@ class Day08Test {
 
     @Test
     fun part2_RealInput() {
-        val result = Day08().part2()
+        val result = Day08(realInput).part2()
         assertEquals(758, result)
     }
 }

@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day13(private val input: List<String>) {
-    constructor() : this(Input("13.txt").lines())
-
     fun part1(): Int {
         val t = input.first().toInt()
         val buses = input.last().split(",").mapNotNull { it.toIntOrNull() }

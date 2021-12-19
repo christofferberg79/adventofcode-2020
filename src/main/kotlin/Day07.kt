@@ -1,8 +1,6 @@
 package cberg.aoc2020
 
 class Day07(input: List<String>) {
-    constructor() : this(Input("07.txt").lines())
-
     private val rules = parse(input)
 
     fun part1() = rules.keys.count { bag -> bag.eventuallyContains("shiny gold") }
